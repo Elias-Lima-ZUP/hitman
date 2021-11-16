@@ -3,7 +3,7 @@ services:
 
     hitman:
         container_name: hitman
-        build: .
+        image: rmnobarra/hitman
         environment:
           DATABASE_URL: "jdbc:postgresql://postgres:5432/hitman"
         depends_on:
