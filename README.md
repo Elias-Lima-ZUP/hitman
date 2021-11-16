@@ -30,3 +30,5 @@ docker-compose up -d --build
 ```
 
 Inside util folder there's a POSTMAN export with examples.
+
+## Enjoy!
