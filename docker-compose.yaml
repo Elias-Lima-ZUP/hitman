@@ -1,0 +1,27 @@
+version: '3'
+services:
+
+    hitman:
+        container_name: hitman
+        build: .
+        environment:
+          DATABASE_URL: "jdbc:postgresql://postgres:5432/hitman"
+        depends_on:
+          - "postgres"
+        ports:
+          - 8080:8080    
+
+    postgres:
+        container_name: postgres
+        image: 'postgres:alpine'
+        volumes:
+          - postgres-volume:/var/lib/postgresql/data
+        ports:
+          - 5432:5432
+        environment:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: hitman
+              
+volumes:
+ postgres-volume:

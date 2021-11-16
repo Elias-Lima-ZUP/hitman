@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "cf5581bc-7e7a-4cbd-aa19-ecd3ccc97b62",
+		"name": "hitman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all hitmans",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/hitmans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"hitmans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get hitmans by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/hitmans/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"hitmans",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create hitman",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"firstName\": \"Jason\",\n\"lastName\": \"Voorhees\",\n\"email\": \"friday13th@crystal-lake.org\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/hitmans",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"hitmans"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update hitman",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"firstName\": \"Freddy\",\n\"lastName\": \"Krueger\",\n\"email\": \"elmstreet1428@seeyouinyourdream.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/hitmans/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"hitmans",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete hitman",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"firstName\": \"Freddy\",\n\"lastName\": \"Krueger\",\n\"email\": \"elmstreet1428@seeyouinyourdream.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/hitmans/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"hitmans",
+						"10"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
