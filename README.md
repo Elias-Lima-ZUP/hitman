@@ -26,7 +26,7 @@ Simple CRUD to play with java and spring boot
 ## How play?
 
 ```bash
-docker-compose up -d --build
+docker-compose up -d
 ```
 
 Inside util folder there's a POSTMAN export with examples.
