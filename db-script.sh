@@ -10,3 +10,8 @@ docker inspect mysql
 docker stats mysql
 
 docker top mysql
+
+# Comandos para parar e remover um container
+docker stop mysql
+
+docker rm mysql
